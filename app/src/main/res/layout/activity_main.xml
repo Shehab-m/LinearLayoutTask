@@ -4,185 +4,164 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingHorizontal="16dp"
-    android:paddingTop="16dp"
-    tools:context=".MainActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/marginOut"
+    android:paddingTop="@dimen/marginOut"
+    tools:context=".MainActivity">
 
     <LinearLayout
-        android:id="@+id/cardLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/rounded_layout"
         android:paddingStart="12dp"
         android:paddingTop="12dp"
         android:paddingEnd="8dp"
-        android:paddingBottom="11dp">
+        android:paddingBottom="12dp">
 
         <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/imageView"
             android:layout_width="93dp"
             android:layout_height="93dp"
             android:layout_marginEnd="12dp"
             android:src="@drawable/person"
             app:shapeAppearance="@style/roundedImageView" />
 
-
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:text="Ahmed hassan"
-                android:textColor="@color/black"
-                android:textSize="16sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:text="Engineer"
-                android:textColor="@color/black"
-                android:textSize="12sp" />
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:layout_width="14dp"
-                    android:layout_height="16dp"
-                    android:src="@drawable/ic_baseline_location_on_24"
-                    android:textColor="@color/black" />
+            <LinearLayout style="@style/RowLayout.Top">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="UK"
-                    android:textColor="@color/black"
-                    android:textSize="13sp" />
+                    android:fontFamily="@font/dmsans_regular"
+                    android:gravity="start"
+                    android:text="@string/name"
+                    android:textColor="@color/black_text"
+                    android:textFontWeight="700" />
+
+                <View style="@style/view" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_text"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:gravity="center"
+                    android:text="@string/hours"
+                    android:textColor="@color/white"
+                    android:textFontWeight="400"
+                    android:textSize="12sp" />
 
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:orientation="horizontal">
+            <LinearLayout style="@style/RowLayout.Middle">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:text="@string/jop"
+                    android:textColor="@color/blue_black_nationality"
+                    android:textFontWeight="500"
+                    android:textSize="12sp" />
+
+                <View
+                    style="@style/view" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:gravity="center"
+                    android:text="@string/nationality"
+                    android:textColor="@color/blue_black_nationality"
+                    android:textFontWeight="500"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/RowLayout.Middle">
+
+                <ImageView
+                    android:id="@+id/img_location"
+                    android:layout_width="10dp"
+                    android:layout_height="12dp"
+                    android:layout_marginEnd="4dp"
+                    android:src="@drawable/ic_location"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/tv_country"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:text="@string/country"
+                    android:textColor="@color/grey_country"
+                    android:textFontWeight="400"
+                    android:textSize="13sp" />
+
+                <View
+                    style="@style/view" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:gravity="end"
+                    android:text="@string/duration"
+                    android:textColor="@color/grey_duration"
+                    android:textFontWeight="400"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/RowLayout.Bottom">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="8dp"
-                    android:text="(150 Reviews)"
-                    android:textColor="@color/black"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:text="@string/reviews"
+                    android:textColor="@color/black_text"
+                    android:textFontWeight="400"
                     android:textSize="12sp" />
 
-                <TextView
+                <LinearLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="4dp"
-                    android:text="4.5"
-                    android:textSize="12sp" />
+                    android:layout_height="match_parent"
+                    android:gravity="bottom"
+                    android:orientation="horizontal">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="4dp"
-                    android:text="⭐"
-                    android:textSize="12sp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="4dp"
+                        android:fontFamily="@font/dmsans_regular"
+                        android:text="@string/score"
+                        android:textColor="@color/black_text"
+                        android:textFontWeight="500"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:drawablePadding="4dp"
+                        app:drawableEndCompat="@drawable/icon_star" />
 
+                    <ImageView
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_marginBottom="2dp"
+                        android:src="@drawable/icon_star"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
 
             </LinearLayout>
-
 
         </LinearLayout>
 
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="end"
-            android:orientation="vertical">
-
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:background="@drawable/rounded_text"
-                android:paddingHorizontal="8dp"
-                android:paddingVertical="4dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="3 hr"
-                    android:gravity="center"
-                    android:textColor="@color/white"
-                    android:textSize="12sp" />
-            </LinearLayout>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:text="Russian"
-                android:gravity="center"
-                android:textColor="@color/black"
-                android:textSize="12sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="0dp"
-                android:layout_weight="2"
-                android:text="5 Days ago"
-                android:textSize="12sp"
-                android:textColor="@color/black"
-                />
-
-
-        </LinearLayout>
-
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="8dp"
-            android:text="(150 Reviews)"
-            android:textColor="@color/black"
-            android:textSize="12sp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="4dp"
-            android:text="4.5"
-            android:textSize="12sp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="4dp"
-            android:layout_gravity="center"
-            android:text="⭐"
-            android:textSize="10sp" />
     </LinearLayout>
 
 
