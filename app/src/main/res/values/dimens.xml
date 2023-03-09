@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="marginOut">16dp</dimen>
+    <dimen name="spaceLarge">12dp</dimen>
+    <dimen name="spaceMid">8dp</dimen>
+    <dimen name="spaceSmall">4dp</dimen>
 </resources>
