@@ -4,4 +4,7 @@
     <dimen name="spaceLarge">12dp</dimen>
     <dimen name="spaceMid">8dp</dimen>
     <dimen name="spaceSmall">4dp</dimen>
+    <dimen name="textSmall">12sp</dimen>
+    <dimen name="textMid">13sp</dimen>
+    <dimen name="textLarge">16sp</dimen>
 </resources>

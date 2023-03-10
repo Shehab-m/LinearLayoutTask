@@ -38,7 +38,7 @@
                     android:text="@string/name"
                     android:textColor="@color/black_text"
                     android:textFontWeight="700"
-                    android:textSize="16sp" />
+                    android:textSize="@dimen/textLarge" />
 
                 <View style="@style/view" />
 
@@ -50,7 +50,7 @@
                     android:text="@string/hours"
                     android:textColor="@color/white"
                     android:textFontWeight="400"
-                    android:textSize="12sp" />
+                    android:textSize="@dimen/textSmall" />
 
             </LinearLayout>
 
@@ -63,7 +63,7 @@
                     android:text="@string/jop"
                     android:textColor="@color/blue_black"
                     android:textFontWeight="500"
-                    android:textSize="12sp" />
+                    android:textSize="@dimen/textSmall" />
 
                 <View style="@style/view" />
 
@@ -74,7 +74,7 @@
                     android:text="@string/nationality"
                     android:textColor="@color/blue_black"
                     android:textFontWeight="500"
-                    android:textSize="12sp" />
+                    android:textSize="@dimen/textSmall" />
 
             </LinearLayout>
 
@@ -93,7 +93,7 @@
                     android:text="@string/country"
                     android:textColor="@color/grey_country"
                     android:textFontWeight="400"
-                    android:textSize="13sp" />
+                    android:textSize="@dimen/textMid" />
 
                 <View style="@style/view" />
 
@@ -104,7 +104,7 @@
                     android:text="@string/duration"
                     android:textColor="@color/grey_duration"
                     android:textFontWeight="400"
-                    android:textSize="12sp" />
+                    android:textSize="@dimen/textSmall" />
 
             </LinearLayout>
 
@@ -118,7 +118,7 @@
                     android:text="@string/reviews"
                     android:textColor="@color/black_text"
                     android:textFontWeight="400"
-                    android:textSize="12sp" />
+                    android:textSize="@dimen/textSmall" />
 
 
                 <TextView
@@ -129,7 +129,7 @@
                     android:text="@string/score"
                     android:textColor="@color/black_text"
                     android:textFontWeight="500"
-                    android:textSize="12sp"
+                    android:textSize="@dimen/textSmall"
                     app:drawableEndCompat="@drawable/icon_star" />
 
 
